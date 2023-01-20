@@ -45,8 +45,13 @@
   <hr>
   {#if 결과.시급 != 0}
   <div>복리후생비 포함</div>
-    <div>월급: {Math.round(결과.월급)}</div><div>시급: {Math.round(결과.시급)}</div> <div>기본급: {Math.round(결과.기본급)}</div> <div>소계(기본급+복리후생비): {Math.round(결과.소계)}</div> 
-    <div>야간: {Math.round(결과.야간)}</div> <div>주말: {Math.round(결과.주말)}</div> <div>휴가: {Math.round(결과.휴가)}</div>
+    <div>월급: {Math.round(결과.월급)}</div>
+    <div>시급: {Math.round(결과.시급)}</div> 
+    <div>기본급: {Math.round(결과.기본급)}</div> 
+    <div>소계(기본급+복리후생비): {Math.round(결과.소계)}</div> 
+    <div>연장: {Math.round(결과.야간)}</div> 
+    <div>야간: {Math.round(결과.주말)}</div> 
+    <div>휴일: {Math.round(결과.휴가)}</div>
     <hr>
   {/if}
   {#if 미결과.시급 != 0}
